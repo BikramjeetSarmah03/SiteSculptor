@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 
 import { ClerkProvider } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
@@ -7,7 +7,7 @@ import { dark } from "@clerk/themes";
 import "@/app/globals.css";
 import { ThemeProvider } from "@/providers/theme-provider";
 
-const font = Inter({ subsets: ["latin"] });
+const font = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Site Sculptor",

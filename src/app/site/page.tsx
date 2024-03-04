@@ -16,17 +16,19 @@ import { cn } from "@/lib/utils";
 export default function Home() {
   return (
     <>
-      <section className="h-full w-full md:pt-36 mt-[-150px] md:mt-0 relative flex items-center justify-center flex-col">
+      <section className="h-full w-full md:pt-36 mt-[-150px] md:mt-0 lg:mt-40  flex items-center justify-center flex-col relative">
         <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]"></div>
 
-        <p className="text-xs sm:text-base">Run your agency, in one place</p>
+        <p className="text-xs sm:text-base lg:text-xl">
+          Run your agency, in one place
+        </p>
         <div className="bg-gradient-to-tr from-primary to-secondary-foreground bg-clip-text relative">
           <h1 className="text-3xl sm:text-7xl font-bold text-center md:text-[150px] xl:text-[250px] text-transparent">
             Site Sculptor
           </h1>
         </div>
 
-        <div className="flex justify-center items-center relative md:mt-20 mt-10 mx-2">
+        <div className="flex justify-center items-center relative md:mt-20 lg:mt-40 mt-10 mx-2">
           <Image
             src={"/assets/preview.png"}
             alt="preview"
@@ -40,7 +42,7 @@ export default function Home() {
 
       <section
         id="pricing"
-        className="flex justify-center items-center gap-4 md:!mt-20 mt-[-80px] flex-col">
+        className="flex justify-center items-center gap-4 md:!mt-20 lg:!mt-56 mt-[-80px] flex-col">
         <h1 className="text-4xl text-center">Choose what fits you right</h1>
         <p className="text-muted-foreground text-center text-xs sm:text-base">
           Our straightforward pricing plans are tailored to meet your needs. If{" "}
