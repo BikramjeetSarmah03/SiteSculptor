@@ -16,7 +16,7 @@ export default function Navigation({}: Props) {
   const { theme } = useTheme();
 
   return (
-    <header className="p-4 flex items-center justify-between relative z-10">
+    <header className="p-4 flex items-center justify-between relative z-10 ">
       <aside className="flex items-center gap-2 h-full w-full">
         <Image
           src={theme === "dark" ? "/assets/logo-dark.png" : "/assets/logo.png"}

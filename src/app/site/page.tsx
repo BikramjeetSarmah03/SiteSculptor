@@ -54,7 +54,7 @@ export default function Home() {
             <Card
               key={idx}
               className={cn(
-                "w-[250px] sm:w-[300px] flex flex-col justify-between",
+                "w-[250px] sm:w-[300px] flex flex-col justify-between hover:border-primary hover:border-2 transition-all duration-300 hover:scale-105",
                 card.title === "Unlimited Saas" && "border-2 border-primary"
               )}>
               <CardHeader>
@@ -83,7 +83,7 @@ export default function Home() {
                 <Link
                   href={`/agency?plan=${card.priceId}`}
                   className={cn(
-                    "w-full text-center p-2 bg-primary rounded-md text-background",
+                    "w-full text-center p-2 bg-primary rounded-md text-white",
                     card.title !== "Unlimited Saas" && "!bg-muted-foreground"
                   )}>
                   Get Started
